@@ -100,7 +100,7 @@ public class BatteryGUI extends JFrame {
 
     private static void runCommand(int n) throws IOException {
         String dir = System.getProperty("user.dir"); //current working directory
-        final String[] args = {"-forcePstate:0,0","-forcePstate:0,12","-setPStateLimit:0,8",}; //setPStateLimit limits the MAX clock value, otherwise should go to IDLE
+        final String[] args = {"-setPStateLimit:0,0","-forcePstate:0,12","-setPStateLimit:0,8",}; //setPStateLimit limits the MAX clock value, otherwise should go to IDLE
         ProcessBuilder builder = new ProcessBuilder(
                 "cmd.exe", "/c", dir+"\\nvidiaInspector.exe " + args[n]);
         builder.start();
