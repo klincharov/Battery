@@ -6,3 +6,6 @@ That was previously accomplished with a couple of batch files.
 
 Sadly, there are no Java based nvidia driver classes, which could be used to directly interfere with the driver itself. 
 Therefore, 'nvidiaInspector' is needed in the current dir.
+
+
+// TODO java with C wrappers ??
